@@ -1,0 +1,28 @@
+#include <Arduino.h>
+float error=0;
+float error2=0;
+float error1=0;
+float previous_error=0;
+float previous_error1=0;
+float previous_error2=0;
+float error_sum = 0;
+float error_sum1 = 0;
+float error_sum2 = 0;
+// float kp = 0.05;               
+// float ki = 0;       
+// float kd = 0.002;
+float kp = 1;               
+float ki = 0;       
+float kd=1.2;
+int cpt = 0;
+// float kp1 = 3.5;               
+// float ki1 =0.000009;       
+// float kd1 = 15;  
+float kp1 = 1.5;              
+float ki1 =0;       
+float kd1 = 15;   
+float kp2 = 3;              
+float ki2 =0;       
+float kd2 = 18;
+float RC = 1.013;
+void speedControl(int targetTicks, int consigne_orientation);
